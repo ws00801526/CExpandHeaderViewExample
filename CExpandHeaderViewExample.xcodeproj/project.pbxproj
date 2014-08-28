@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF10243C19AF1076006EBE11 /* ScrollTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF10243B19AF1076006EBE11 /* ScrollTestViewController.m */; };
+		AF10243F19AF1906006EBE11 /* CustomHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF10243E19AF1906006EBE11 /* CustomHeadViewController.m */; };
 		AF37E90319ADC5C0000C6432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF37E90219ADC5C0000C6432 /* Foundation.framework */; };
 		AF37E90519ADC5C0000C6432 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF37E90419ADC5C0000C6432 /* CoreGraphics.framework */; };
 		AF37E90719ADC5C0000C6432 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF37E90619ADC5C0000C6432 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		AF10243A19AF1075006EBE11 /* ScrollTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTestViewController.h; sourceTree = "<group>"; };
 		AF10243B19AF1076006EBE11 /* ScrollTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTestViewController.m; sourceTree = "<group>"; };
+		AF10243D19AF1906006EBE11 /* CustomHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeadViewController.h; sourceTree = "<group>"; };
+		AF10243E19AF1906006EBE11 /* CustomHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeadViewController.m; sourceTree = "<group>"; };
 		AF37E8FF19ADC5C0000C6432 /* CExpandHeaderViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CExpandHeaderViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF37E90219ADC5C0000C6432 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF37E90419ADC5C0000C6432 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				AF37E91819ADC5C0000C6432 /* ViewController.m */,
 				AF10243A19AF1075006EBE11 /* ScrollTestViewController.h */,
 				AF10243B19AF1076006EBE11 /* ScrollTestViewController.m */,
+				AF10243D19AF1906006EBE11 /* CustomHeadViewController.h */,
+				AF10243E19AF1906006EBE11 /* CustomHeadViewController.m */,
 				AF37E91A19ADC5C0000C6432 /* Images.xcassets */,
 				AF37E90919ADC5C0000C6432 /* Supporting Files */,
 			);
@@ -274,6 +279,7 @@
 				AF37E91919ADC5C0000C6432 /* ViewController.m in Sources */,
 				AF37E91319ADC5C0000C6432 /* AppDelegate.m in Sources */,
 				AF37E93A19ADC61B000C6432 /* CExpandHeader.m in Sources */,
+				AF10243F19AF1906006EBE11 /* CustomHeadViewController.m in Sources */,
 				AF37E90F19ADC5C0000C6432 /* main.m in Sources */,
 				AF10243C19AF1076006EBE11 /* ScrollTestViewController.m in Sources */,
 			);
