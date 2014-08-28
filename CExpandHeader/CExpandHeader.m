@@ -38,9 +38,10 @@
     
     _scrollView = scrollView;
     _scrollView.contentInset = UIEdgeInsetsMake(_expandHeight, 0, 0, 0);
-    [_scrollView addSubview:expandView];
+    [_scrollView insertSubview:expandView atIndex:0];
     [_scrollView addObserver:self forKeyPath:CExpandContentOffset options:NSKeyValueObservingOptionNew context:nil];
-    
+    [_scrollView setContentOffset:CGPointMake(0, -180)];
+
     _expandView = expandView;
     
     //使View可以伸展效果  重要属性
