@@ -7,7 +7,8 @@
 //
 
 #import "ScrollTestViewController.h"
-#import "CExpandHeader.h"
+#import "CExpandHeaderViewExample-Swift.h"
+
 @interface ScrollTestViewController ()
 
 @end
@@ -15,7 +16,6 @@
 @implementation ScrollTestViewController{
     
     __weak IBOutlet UIScrollView *scrollView;
-    CExpandHeader *_header;
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,26 +33,15 @@
     // Do any additional setup after loading the view.
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 180)];
-    [imageView setImage:[UIImage imageNamed:@"image"]];
-    [scrollView setContentSize:CGSizeMake(0, 800)];
-    _header = [CExpandHeader expandWithScrollView:scrollView expandView:imageView];
+    imageView.image = [UIImage imageNamed:@"image"];
+    
+    
+    [scrollView addSubview:imageView];
+    [XMNExpander expandWithHeaderView:imageView inScrollView:scrollView maxExpandHeight:300 minExpandHeight:64];
+    
+    
+    [scrollView setContentSize:CGSizeMake(0, 999)];
+    scrollView.backgroundColor = [UIColor greenColor];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

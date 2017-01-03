@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97CF950A1E1B799B007B3AE2 /* XMNExpander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF95091E1B799B007B3AE2 /* XMNExpander.swift */; };
 		AF10243C19AF1076006EBE11 /* ScrollTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF10243B19AF1076006EBE11 /* ScrollTestViewController.m */; };
 		AF10243F19AF1906006EBE11 /* CustomHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF10243E19AF1906006EBE11 /* CustomHeadViewController.m */; };
 		AF37E90319ADC5C0000C6432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF37E90219ADC5C0000C6432 /* Foundation.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97CF95081E1B799B007B3AE2 /* CExpandHeaderViewExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CExpandHeaderViewExample-Bridging-Header.h"; path = "../CExpandHeader/CExpandHeaderViewExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		97CF95091E1B799B007B3AE2 /* XMNExpander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMNExpander.swift; sourceTree = "<group>"; };
 		AF10243A19AF1075006EBE11 /* ScrollTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTestViewController.h; sourceTree = "<group>"; };
 		AF10243B19AF1076006EBE11 /* ScrollTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTestViewController.m; sourceTree = "<group>"; };
 		AF10243D19AF1906006EBE11 /* CustomHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeadViewController.h; sourceTree = "<group>"; };
@@ -133,6 +136,7 @@
 				AF10243B19AF1076006EBE11 /* ScrollTestViewController.m */,
 				AF10243D19AF1906006EBE11 /* CustomHeadViewController.h */,
 				AF10243E19AF1906006EBE11 /* CustomHeadViewController.m */,
+				97CF95081E1B799B007B3AE2 /* CExpandHeaderViewExample-Bridging-Header.h */,
 				AF37E91A19ADC5C0000C6432 /* Images.xcassets */,
 				AF37E90919ADC5C0000C6432 /* Supporting Files */,
 			);
@@ -171,6 +175,7 @@
 		AF37E93719ADC5E6000C6432 /* CExpandHeader */ = {
 			isa = PBXGroup;
 			children = (
+				97CF95091E1B799B007B3AE2 /* XMNExpander.swift */,
 				AF7DC65719ADE19F005C8B7B /* image.png */,
 				AF37E93819ADC61B000C6432 /* CExpandHeader.h */,
 				AF37E93919ADC61B000C6432 /* CExpandHeader.m */,
@@ -225,6 +230,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Mei_L;
 				TargetAttributes = {
+					AF37E8FE19ADC5C0000C6432 = {
+						LastSwiftMigration = 0820;
+					};
 					AF37E91F19ADC5C0000C6432 = {
 						TestTargetID = AF37E8FE19ADC5C0000C6432;
 					};
@@ -276,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97CF950A1E1B799B007B3AE2 /* XMNExpander.swift in Sources */,
 				AF37E91919ADC5C0000C6432 /* ViewController.m in Sources */,
 				AF37E91319ADC5C0000C6432 /* AppDelegate.m in Sources */,
 				AF37E93A19ADC61B000C6432 /* CExpandHeader.m in Sources */,
@@ -406,11 +415,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CExpandHeaderViewExample/CExpandHeaderViewExample-Prefix.pch";
 				INFOPLIST_FILE = "CExpandHeaderViewExample/CExpandHeaderViewExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CExpandHeader/CExpandHeaderViewExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -420,11 +434,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CExpandHeaderViewExample/CExpandHeaderViewExample-Prefix.pch";
 				INFOPLIST_FILE = "CExpandHeaderViewExample/CExpandHeaderViewExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CExpandHeader/CExpandHeaderViewExample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -432,6 +450,7 @@
 		AF37E93519ADC5C0000C6432 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CExpandHeaderViewExample.app/CExpandHeaderViewExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -454,6 +473,7 @@
 		AF37E93619ADC5C0000C6432 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CExpandHeaderViewExample.app/CExpandHeaderViewExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
